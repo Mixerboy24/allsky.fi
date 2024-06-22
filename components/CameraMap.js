@@ -34,6 +34,10 @@ const CameraMap = () => {
         setSelectedImage(null);
     };
 
+    const getCachedImageUrl = (url) => {
+        return `${url}?_ts=${new Date().getTime()}`;
+    };
+
     return (
         <div className="mapContainer">
             <MapContainer 
@@ -60,7 +64,7 @@ const CameraMap = () => {
                                     </a>
                                 </h2>
                                 <img 
-                                    src={camera.imageUrl} 
+                                    src={getCachedImageUrl(camera.imageUrl)} 
                                     alt={camera.location} 
                                     className="popupImage"
                                     onClick={() => handleImageClick(camera.imageUrl)}
@@ -85,7 +89,7 @@ const CameraMap = () => {
                             onClick={handleCloseModal}
                         >&times;</span>
                         <img 
-                            src={selectedImage} 
+                            src={getCachedImageUrl(selectedImage)} 
                             alt="Selected" 
                             className="modalImage"
                         />
