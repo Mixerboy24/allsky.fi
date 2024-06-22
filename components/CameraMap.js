@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import styles from '../styles/CameraMap.module.css';
 
 const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
 const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
@@ -36,7 +35,7 @@ const CameraMap = () => {
     };
 
     return (
-        <div className={styles.mapContainer}>
+        <div className="mapContainer">
             <MapContainer 
                 center={[64.0, 26.0]} 
                 zoom={6} 
@@ -63,7 +62,7 @@ const CameraMap = () => {
                                 <img 
                                     src={camera.imageUrl} 
                                     alt={camera.location} 
-                                    className={styles.popupImage}
+                                    className="popupImage"
                                     onClick={() => handleImageClick(camera.imageUrl)}
                                 />
                                 <p>
@@ -79,16 +78,16 @@ const CameraMap = () => {
             </MapContainer>
 
             {selectedImage && (
-                <div className={styles.modalOverlay}>
+                <div className="modalOverlay">
                     <div style={{ position: 'relative' }}>
                         <span 
-                            className={styles.modalClose}
+                            className="modalClose"
                             onClick={handleCloseModal}
                         >&times;</span>
                         <img 
                             src={selectedImage} 
                             alt="Selected" 
-                            className={styles.modalImage}
+                            className="modalImage"
                         />
                     </div>
                 </div>

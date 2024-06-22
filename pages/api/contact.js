@@ -1,49 +1,47 @@
-import axios from 'axios';
 import nodemailer from 'nodemailer';
-import config from '../../config.json';
 
-export default async function handler(req, res) {
-  const { name, email, message, recaptcha } = req.body;
+const contact = async (req, res) => {
+    if (req.method === 'POST') {
+        const { name, email, message, captcha } = req.body;
 
-  if (!name || !email || !message || !recaptcha) {
-    return res.status(400).json({ success: false, message: 'All fields are required' });
-  }
+        // Verify CAPTCHA
+        const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+        const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captcha}`;
 
-  try {
-    const recaptchaResponse = await axios.post(`https://www.google.com/recaptcha/api/siteverify`, null, {
-      params: {
-        secret: config.recaptcha.secretKey,
-        response: recaptcha
-      }
-    });
+        const captchaResponse = await fetch(verificationUrl, { method: 'POST' });
+        const captchaData = await captchaResponse.json();
 
-    const { success } = recaptchaResponse.data;
+        if (!captchaData.success) {
+            return res.status(400).json({ error: 'CAPTCHA verification failed' });
+        }
 
-    if (success) {
-      // Konfiguroi Nodemailer käyttämään custom SMTP-palvelinta
-      const transporter = nodemailer.createTransport(config.smtp);
+        // Create a transporter object using SMTP server details
+        const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_HOST,
+            port: process.env.SMTP_PORT,
+            secure: false, // true for 465, false for other ports
+            auth: {
+                user: process.env.SMTP_USER,
+                pass: process.env.SMTP_PASS
+            }
+        });
 
-      // Sähköpostin tiedot
-      const mailOptions = {
-        from: email,
-        to: 'contact@allsky.fi',
-        subject: `New message from ${name}`,
-        text: `
-          Name: ${name}
-          Email: ${email}
-          Message: ${message}
-        `
-      };
-
-      // Lähetä sähköposti
-      await transporter.sendMail(mailOptions);
-
-      return res.status(200).json({ success: true, message: 'Message sent successfully' });
+        try {
+            await transporter.sendMail({
+                from: email, // Use the email from the form
+                to: 'contact@allsky.fi',
+                subject: `New contact form submission from ${name}`,
+                text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+            });
+            res.status(200).json({ success: 'Message sent successfully' });
+        } catch (error) {
+            console.error('Error sending email:', error);
+            res.status(500).json({ error: 'Error sending email' });
+        }
     } else {
-      return res.status(400).json({ success: false, message: 'Captcha verification failed' });
+        res.setHeader('Allow', ['POST']);
+        res.status(405).end(`Method ${req.method} Not Allowed`);
     }
-  } catch (error) {
-    console.error('Error verifying reCAPTCHA or sending email:', error);
-    return res.status(500).json({ success: false, message: 'Server error' });
-  }
-}
+};
+
+export default contact;
