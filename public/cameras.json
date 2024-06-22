@@ -79,6 +79,15 @@
       "cameraUrl":"https://www.sgo.fi/Data/RealTime/allsky.php/",
       "author":"Oulu University / Sodankylä Geophysical Observatory",
       "authorUrl": "https://sgo.fi"
+    },
+    {
+      "location": "Mikkeli",
+      "latitude": "61.684397",
+      "longitude": "27.239682",
+      "imageUrl": "https://uusivalilehti.fi/allsky/image.jpg",
+      "cameraUrl":"https://mikkelinursa.fi/mikkelin-ursan-taivaskamera/",
+      "author":"Mikkelin Ursa Ry",
+      "authorUrl": "https://mikkelinursa.fi/"
     }
   ]
   
