@@ -1,0 +1,11 @@
+.notification {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+    font-size: 18px;
+    position: absolute;
+    top: 60px;
+}

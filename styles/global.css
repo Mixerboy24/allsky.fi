@@ -1,0 +1,65 @@
+@import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+
+html, body, #__next {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+#root, .leaflet-container {
+    height: 100%;
+    width: 100%;
+}
+
+.mapContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centering content vertically */
+    align-items: center; /* Centering content horizontally */
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding-top: 60px; 
+        padding-bottom: 50px;
+    }
+}
