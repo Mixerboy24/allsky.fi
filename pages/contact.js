@@ -70,6 +70,25 @@ const Contact = () => {
                     />
                     <button type="submit">Submit</button>
                 </form>
+                <div className={styles.contactInfo}>
+                    <p>Website contact: contact@allsky.fi</p>
+                    <p>Webmaster: Atte Oksanen / Mixerboy24</p>
+                    <p>Email: atte.oksanen@mixerboy24.fi</p>
+                    <p>Website hosting: <a href="https://localghost.fi" target="_blank" rel="noopener noreferrer">LocalghostFI</a></p>
+                    <h3>How to add a new camera to the Map:</h3>
+                    <p>To add your camera to our map, please send the following details via email or create an issue on <a href="https://github.com/Mixerboy24/allsky.fi/issues">Github</a> and include the details:</p>
+                    <pre>{`
+    {
+        "location": "Camera City",
+        "latitude": "Camera Location",
+        "longitude": "Camera Location",
+        "imageUrl": "Camera jpg url",
+        "cameraUrl": "Camera public site",
+        "author": "Camera Owner",
+        "authorUrl": "Author homepage"
+    }
+                    `}</pre>
+                </div>
             </main>
             <Footer />
         </div>

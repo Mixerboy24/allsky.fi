@@ -1,16 +1,13 @@
-import styles from '../styles/Layout.module.css';
+import styles from '../styles/Footer.module.css';
 
 const Footer = () => {
-  return (
-    <footer className={styles.footer}>
-      <p>
-        Developer: <a href="https://mixerboy24.fi" className={styles.link}>Mixerboy24</a>
-      </p>
-      <p>
-        Hosted by: <a href="https://localghost.fi" className={styles.link}>LocalghostFI</a>
-      </p>
-    </footer>
-  );
+    return (
+        <footer className={styles.footer}>
+            <div className={styles.footerContent}>
+                <p>© {new Date().getFullYear()} Allsky.fi</p>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;

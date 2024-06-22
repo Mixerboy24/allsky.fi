@@ -52,3 +52,24 @@
     padding-bottom: 50px; /* Adjust based on footer height */
     height: calc(100vh - 120px); /* Full height minus header and footer */
 }
+
+.contactInfo {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo p {
+    margin: 10px 0;
+}
+
+.contactInfo pre {
+    background-color: #e1e1e1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
