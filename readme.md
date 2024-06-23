@@ -1,30 +1,46 @@
-### Allsky.fi Repo
+## Allsky.fi
+
+**Allsky.fi** verkkosivusto on paikka josta löytää kaikki julkiset taivaskamerat. Kamerat sijaitsevat eri puolilla suomea ja kameroita ylläpitää niin tähtitieteelliset yhdistykset, yliopistot, tutkimuslaitokset kuin yksittäiset yhtiöt.   
+
+Osa kameroista voi olla kesäkauden tauolla jolloin kameroiden kuvat voivat olla "jumahtanut" huhtikuuhun. Suomessa havaintokausi kestää Syyskuusta - Huhtikuuhun. 
+
+**Allsky.fi** on ilmainen ja mainosvapaa sivusto. Kuka tahansa voi ilmoittaa oman taivaskameransa sivustolle. 
+
+Sivuston ylläpitämisestä vastaa [Atte "Mixer" Oksanen](https://mixerboy24.fi) sekä [LocalghostFI](https://localghost.fi).
 
 
+### Kuinka lisään uuden kameran kartalle?
 
-## How to Add a New Camera to the Map?
-
-If you want to add a new camera to the allsky.fi site map, create a new issue according to the JSON code below.
+Jotta voin lisätä kameran verkkosivulle ja osaksi Suomen Allsky verkkoa. Täytä alla oleva JSON koodi ja toimita se issuena tai sähköpostitse contact@allsky.fi.   
+Otsikoi [Issue](https://github.com/Mixerboy24/allsky.fi/issues/new) tai sähköposti: **Uusi kamera: Paikkakunta**
 
 ```json
     {
-        "location": "Camera City",
-        "latitude": "Camera Location",
-        "longitude": "Camera Location",
-        "imageUrl": "Camera jpg url",
-        "cameraUrl": "Camera public site",
-        "author": "Camera Owner",
-        "authorUrl": "Author homepage"
+        "location": "Kameran paikkakunta",
+        "latitude": "koordinaatti",
+        "longitude": "koordinaatti",
+        "imageUrl": "Kameran kuvan jpg URL",
+        "cameraUrl": "Kameran julkinen kotisivu",
+        "author": "Kameran omistaja",
+        "authorUrl": "Omistajan verkkosivu"
     }
 ```
 
-If your code is incomplete, it will not be published.
+*Mikäli koodistasi puuttuu kenttiä, sitä ei julkaista.* 
 
-### Instructions:
+### Ohjeet:
 
-**Location:** The location must be the municipality where the camera is located or the nearest larger municipality/city.
-**Coordinates:** The coordinates can be approximate, as long as they are in the municipality where the camera is located.
-**Image URL:** The image URL must support HTTPS and be publicly accessible.
-**Camera URL:** Not mandatory but recommended so that visitors can visit the camera's site.
-**Author:** Mandatory information. Preferably the owner of the camera. For example, an association or first name and last name + nickname.
-**Author URL:** Recommended so that visitors can visit your site.
+**Sijainti:** Sijainnin on oltava kunta, jossa kamera sijaitsee, tai lähin suurempi kunta/kaupunki.    
+**Koordinaatit:** Koordinaatit voivat olla likimääräisiä, kunhan ne ovat kunnassa, jossa kamera sijaitsee. Koordinaatit ilmoitetaan XX.XXXXX muodossa.    
+Esim Muuramen Allsky: 
+```json
+      "latitude": 62.1374,
+      "longitude": 25.6751,
+```   
+**Kuvan URL:** Kuvan URL:n on tuettava HTTPS:ää ja oltava julkisesti saatavilla.   
+**Kameran URL:** Ei pakollinen, mutta suositeltava, jotta kävijät voivat vierailla kameran sivustolla.   
+**Tekijä:** Pakollinen tieto. Mielellään kameran omistaja. Esimerkiksi yhdistys tai etu- ja sukunimi + lempinimi.   
+**Tekijän URL:** Suositeltava, jotta kävijät voivat vierailla sivustollasi.   
+
+
+---
