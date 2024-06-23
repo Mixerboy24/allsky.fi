@@ -42,5 +42,9 @@ Esim Muuramen Allsky:
 **Tekijä:** Pakollinen tieto. Mielellään kameran omistaja. Esimerkiksi yhdistys tai etu- ja sukunimi + lempinimi.   
 **Tekijän URL:** Suositeltava, jotta kävijät voivat vierailla sivustollasi.   
 
-
 ---
+#### Tulevia ominaisuuksia:
+- LGFI Analytiikka integrointi
+- Allsky API (GET, POST)
+- Dark Theme
+
