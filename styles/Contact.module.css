@@ -1,75 +1,50 @@
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
+.contact-container {
+    padding: 50px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form div {
+  }
+  
+  .contact-info {
+    margin-bottom: 40px;
+  }
+  
+  .contact-form {
     display: flex;
     flex-direction: column;
-}
-
-.form label {
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
     margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form input, .form textarea {
-    padding: 8px;
-    font-size: 16px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.form button {
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
     padding: 10px;
-    font-size: 16px;
-    background-color: #333;
-    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #0070f3;
+    color: white;
     cursor: pointer;
-}
-
-.form button:hover {
-    background-color: #555;
-}
-
-.main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 70px; /* Adjust based on header height */
-    padding-bottom: 50px; /* Adjust based on footer height */
-    height: calc(100vh - 120px); /* Full height minus header and footer */
-}
-
-.contactInfo {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 600px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contactInfo p {
-    margin: 10px 0;
-}
-
-.contactInfo pre {
-    background-color: #e1e1e1;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-}
+  }
+  
+  .contact-form button:hover {
+    background-color: #005bb5;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-container {
+      padding: 10px;
+    }
+  }
+  

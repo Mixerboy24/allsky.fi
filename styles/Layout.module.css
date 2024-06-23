@@ -115,7 +115,7 @@
   
 @media (max-width: 768px) {
     .main {
-        padding-top: 60px; /* Adjust based on header height */
+        padding-top: 70px; /* Adjust based on header height */
         padding-bottom: 50px; /* Adjust based on footer height */
     }
   

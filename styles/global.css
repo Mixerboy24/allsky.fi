@@ -17,7 +17,7 @@ header {
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 2px;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ footer {
     z-index: 1000;
     font-size: 18px;
     position: fixed;
-    top: 50px; /* Just below the header */
+    top: 50px; 
 }
 
 main {
@@ -57,9 +57,9 @@ main {
     justify-content: center; /* Centering content vertically */
     align-items: center; /* Centering content horizontally */
     width: 100%;
-    padding-top: 70px; /* Adjust based on header height */
+    padding-top: 40px; /* Adjust based on header height */
     padding-bottom: 50px; /* Adjust based on footer height */
-    height: calc(100vh - 120px); /* Full height minus header and footer */
+    height: calc(100vh - 100px); /* Full height minus header and footer */
 }
 
 .mapContainer {
