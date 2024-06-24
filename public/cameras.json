@@ -13,7 +13,7 @@
       "latitude": 62.346625,
       "longitude": 25.5131,
       "imageUrl": "https://aurorasnow.fmi.fi/public_service/images/latest_SIR.jpg",
-      "cameraUrl": "https://nyrola.jklsirius..fi",
+      "cameraUrl": "http://nyrola.jklsirius.fi",
       "author": "Jyväskylän Sirius Ry",
       "authorUrl": "https://jklsirius.fi"
     },
@@ -31,7 +31,7 @@
       "latitude": 62.2547,
       "longitude": 26.5964,
       "imageUrl": "https://aurorasnow.fmi.fi/public_service/images/latest_SIR_AllSky.jpg",
-      "cameraUrl": "https://murtoinen.jklsirius.fi",
+      "cameraUrl": "http://murtoinen.jklsirius.fi",
       "author": "Jyväskylän Sirius Ry",
       "authorUrl": "https://jklsirius.fi"
     },
