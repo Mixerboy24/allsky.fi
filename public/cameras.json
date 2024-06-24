@@ -97,6 +97,15 @@
       "cameraUrl": "https://karhunvartijat.fi/karhukamera/",
       "author": "Porin Karhunvartijat ry",
       "authorUrl": "https://karhunvartijat.fi/"
+    },
+    {
+      "location": "Lappeenranta (Mustola)",
+      "latitude": "61.06",
+      "longitude": "28.32",
+      "imageUrl": "https://www.sinijari.fi/allsky/image.jpg",
+      "cameraUrl": "https://www.sinijari.fi/allsky/index.php",
+      "author": "Mustola Observatory",
+      "authorUrl": "#"
     }
     
   ]
