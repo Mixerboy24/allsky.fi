@@ -1,8 +1,8 @@
 [
     {
       "location": "Muurame",
-      "latitude": 62.1374,
-      "longitude": 25.6751,
+      "latitude": "62.1374",
+      "longitude": "25.6751",
       "imageUrl": "https://muurameallsky.fi/image-resize.jpg",
       "cameraUrl": "https://muurameallsky.fi",
       "author": "LocalghostFI",
@@ -10,8 +10,8 @@
     },
     {
       "location": "Nyrölä",
-      "latitude": 62.346625,
-      "longitude": 25.5131,
+      "latitude": "62.346625",
+      "longitude": "25.5131",
       "imageUrl": "https://aurorasnow.fmi.fi/public_service/images/latest_SIR.jpg",
       "cameraUrl": "http://nyrola.jklsirius.fi",
       "author": "Jyväskylän Sirius Ry",
@@ -19,8 +19,8 @@
     },
     {
       "location": "Nenäinniemi (Jyväskylä)",
-      "latitude": 62.2110556,
-      "longitude": 25.7767778,
+      "latitude": "62.2110556",
+      "longitude": "25.7767778",
       "imageUrl": "https://www.jyv-weather.info/allsky/image.jpg",
       "cameraUrl": "https://jyv-weather.info",
       "author": "Jyv-Weather",
@@ -28,8 +28,8 @@
     },
     {
       "location": "Hankasalmi",
-      "latitude": 62.2547,
-      "longitude": 26.5964,
+      "latitude": "62.2547",
+      "longitude": "26.5964",
       "imageUrl": "https://aurorasnow.fmi.fi/public_service/images/latest_SIR_AllSky.jpg",
       "cameraUrl": "http://murtoinen.jklsirius.fi",
       "author": "Jyväskylän Sirius Ry",
