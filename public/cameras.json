@@ -106,6 +106,15 @@
       "cameraUrl": "https://www.sinijari.fi/allsky/index.php",
       "author": "Mustola Observatory",
       "authorUrl": "#"
+    },
+        {
+      "location": "Tampere",
+      "latitude": "61.5122",
+      "longitude": "23.7939",
+      "imageUrl": "https://www.ursa.fi/yhd/tampereenursa/ys-images/north-snapshot.jpg",
+      "cameraUrl": "https://www.ursa.fi/yhd/tampereenursa/",
+      "author": "Tampereen Ursa Ry",
+      "authorUrl": "https://www.tampereenursa.fi/etusivu"
     }
     
   ]
