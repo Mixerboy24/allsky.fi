@@ -107,7 +107,7 @@
       "author": "Mustola Observatory",
       "authorUrl": "#"
     },
-        {
+    {
       "location": "Tampere",
       "latitude": "61.5122",
       "longitude": "23.7939",
@@ -115,6 +115,15 @@
       "cameraUrl": "https://www.ursa.fi/yhd/tampereenursa/",
       "author": "Tampereen Ursa Ry",
       "authorUrl": "https://www.tampereenursa.fi/etusivu"
+    },
+    {
+      "location": "Vaala",
+      "latitude": "64.34",
+      "longitude": "26.98",
+      "imageUrl": "https://kaukoputkimies.fi/allsky/allsky.jpg",
+      "cameraUrl": "https://www.kaukoputkimies.fi/allsky/",
+      "author": "Tero Hiekkalinna",
+      "authorUrl": "https://www.kaukoputkimies.fi/"
     }
     
   ]
