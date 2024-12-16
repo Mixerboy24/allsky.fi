@@ -115,6 +115,15 @@
       "cameraUrl": "https://www.kaukoputkimies.fi/allsky/",
       "author": "Tero Hiekkalinna",
       "authorUrl": "https://www.kaukoputkimies.fi/"
+    },
+    {
+      "location": "Kevo",
+      "latitude": "69.76",
+      "longitude": "27.01",
+      "imageUrl": "https://space.fmi.fi/MIRACLE/RWC/latest_KEV.jpg",
+      "cameraUrl":"https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/",
+      "author":"Ilmatieteenlaitos / FMI",
+      "authorUrl": "https://fmi.fi"
     }
     
   ]
