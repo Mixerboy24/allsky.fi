@@ -124,7 +124,16 @@
       "cameraUrl":"https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/",
       "author":"Ilmatieteenlaitos / FMI",
       "authorUrl": "https://fmi.fi"
-    }
+    },
+    {
+      "location": "Orimattila",
+      "latitude": "60.7335",
+      "longitude": "26.212806",
+      "imageUrl": "https://www.ursa.fi/fileadmin/ursa2010/kuvat/tahtikallio/tahtikallio-allsky.jpg",
+      "cameraUrl": "https://www.ursa.fi/tahtikallio",
+      "author": "Ursa ry, Tähtikallio",
+      "authorUrl": "https://www.ursa.fi"
+}
     
-  ]
+]
   
