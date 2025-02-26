@@ -1,11 +1,17 @@
 name: 📷 Lisää uusi kamera kartalle
 description: Lähetä tiedot kamerasi lisäämiseksi kartalle.
 labels: ["uusi kamera"]
+assignees:
+  - Mixerboy24
 body:
   - type: markdown
     attributes:
       value: |
         **Kuinka lisätä uusi kamera kartalle**
+
+        **Muista asettaa otsikoksi**:  
+        🔹 `Uusi Kamera: <paikkakunta>`  
+        (Korvaa `<paikkakunta>` kamerasi sijainnilla.)
         
         Lisää kamerasi kartalle kopioimalla ja täyttämällä alla oleva JSON-malli:
         
