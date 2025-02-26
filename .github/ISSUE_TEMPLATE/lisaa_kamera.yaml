@@ -1,6 +1,6 @@
 name: 📷 Lisää uusi kamera kartalle
 description: Lähetä tiedot kamerasi lisäämiseksi kartalle.
-labels: ["uusi kamera"]
+labels: ["Uusi kamera"]
 assignees:
   - Mixerboy24
 body:
@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         **Kuinka lisätä uusi kamera kartalle**
-
+        
         **Muista asettaa otsikoksi**:  
         🔹 `Uusi Kamera: <paikkakunta>`  
         (Korvaa `<paikkakunta>` kamerasi sijainnilla.)
