@@ -1,20 +1,27 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+interface ForecastData {
+    time: string;
+    day1: string;
+    day2: string;
+    day3: string;
+}
+
 const useAuroraForecast = () => {
-    const [kpIndex, setKpIndex] = useState(null);
-    const [error, setError] = useState(null);
+    const [kpIndex, setKpIndex] = useState<number | null>(null);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchForecast = async () => {
             try {
-                const response = await axios.get('https://services.swpc.noaa.gov/text/3-day-forecast.txt');
+                const response = await axios.get<string>('https://services.swpc.noaa.gov/text/3-day-forecast.txt');
                 const forecast = response.data;
                 const stripStart = forecast.substring(forecast.indexOf("00-03UT"));
                 const kpTable = stripStart.substring(0, stripStart.indexOf("Rationale") - 2);
                 const rows = kpTable.split("\n");
 
-                const data = rows.map(row => {
+                const data: ForecastData[] = rows.map(row => {
                     const noBrackets = row.replace(/\([^)]+\)/g, "");
                     const dataFormatted = noBrackets.replace(/\s+/g, ' ').trim();
                     const rowData = dataFormatted.split(' ');
@@ -29,7 +36,7 @@ const useAuroraForecast = () => {
                 if (data[0].time.startsWith("WARNING")) {
                     setError(data[0].time);
                 } else {
-                    const getSum = (data, field) => {
+                    const getSum = (data: ForecastData[], field: keyof ForecastData) => {
                         const total = data.reduce((sum, row) => sum + parseInt(row[field]), 0);
                         return Math.round(total / data.length);
                     };

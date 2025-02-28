@@ -1,4 +1,4 @@
-import useAuroraForecast from '../hooks/useAuroraForecast';
+import useAuroraForecast from '../../hooks/useAuroraForecast';
 import styles from './AuroraNotification.module.css';
 
 const AuroraNotification = () => {
@@ -8,7 +8,7 @@ const AuroraNotification = () => {
         return <div className={styles.notification}>{error}</div>;
     }
 
-    if (kpIndex >= 4) { // Threshold for displaying the notification
+    if (kpIndex !== null && kpIndex >= 4) {
         return (
             <div className={styles.notification}>
                 Aurora activity expected! Kp index: {kpIndex}

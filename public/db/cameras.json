@@ -1,0 +1,138 @@
+[
+  {
+    "location": "Muurame",
+    "latitude": "62.1374",
+    "longitude": "25.6751",
+    "imageUrl": "https://muurameallsky.fi/image-resize.jpg",
+    "cameraUrl": "https://muurameallsky.fi",
+    "author": "Mixerboy24",
+    "authorUrl": "https://mixerboy24.fi"
+  },
+  {
+    "location": "Nyrölä",
+    "latitude": "62.346625",
+    "longitude": "25.5131",
+    "imageUrl": "https://aurorasnow.fmi.fi/public_service/images/latest_SIR.jpg",
+    "cameraUrl": "http://nyrola.jklsirius.fi",
+    "author": "Jyväskylän Sirius Ry",
+    "authorUrl": "https://jklsirius.fi"
+  },
+  {
+    "location": "Hankasalmi",
+    "latitude": "62.2547",
+    "longitude": "26.5964",
+    "imageUrl": "https://aurorasnow.fmi.fi/public_service/images/latest_SIR_AllSky.jpg",
+    "cameraUrl": "http://murtoinen.jklsirius.fi",
+    "author": "Jyväskylän Sirius Ry",
+    "authorUrl": "https://jklsirius.fi"
+  },
+  {
+    "location": "Muonio",
+    "latitude": "68.02",
+    "longitude": "23.53",
+    "imageUrl": "https://space.fmi.fi/MIRACLE/RWC/latest_MUO.jpg",
+    "cameraUrl":"https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/",
+    "author":"Ilmatieteenlaitos / FMI",
+    "authorUrl": "https://fmi.fi"
+  },
+  {
+    "location": "Helsinki",
+    "latitude": "60.203800",
+    "longitude": "24.960764",
+    "imageUrl": "https://space.fmi.fi/MIRACLE/RWC/latest_HEL.jpg",
+    "cameraUrl":"https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/",
+    "author":"Ilmatieteenlaitos / FMI",
+    "authorUrl": "https://fmi.fi"
+  },
+  {
+    "location": "Kirkkonummi (Metsähovi)",
+    "latitude": "60.217458",
+    "longitude": "24.393028",
+    "imageUrl": "https://space.fmi.fi/MIRACLE/RWC/latest_HOV.jpg",
+    "cameraUrl":"https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/",
+    "author":"Aalto University",
+    "authorUrl": "https://metsahovi.fi"
+  },
+  {
+    "location": "Paimio",
+    "latitude": "60.420572",
+    "longitude": "22.766299",
+    "imageUrl": "https://turunursa.fi/allsky/images/image.jpg",
+    "cameraUrl":"https://turunursa.fi/allsky-kevola/",
+    "author":"Turun Ursa Ry",
+    "authorUrl": "https://turunursa.fi"
+  },
+  {
+    "location": "Sodankylä",
+    "latitude": "67.365076",
+    "longitude": "26.628782",
+    "imageUrl": "https://www.sgo.fi/Data/RealTime/Kuvat/skyi_SOD_latest.jpg",
+    "cameraUrl":"https://www.sgo.fi/Data/RealTime/allsky.php/",
+    "author":"Oulu University / Sodankylä Geophysical Observatory",
+    "authorUrl": "https://sgo.fi"
+  },
+  {
+    "location": "Mikkeli",
+    "latitude": "61.684397",
+    "longitude": "27.239682",
+    "imageUrl": "https://uusivalilehti.fi/allsky/image.jpg",
+    "cameraUrl":"https://mikkelinursa.fi/mikkelin-ursan-taivaskamera/",
+    "author":"Mikkelin Ursa Ry",
+    "authorUrl": "https://mikkelinursa.fi/"
+  },
+  {
+    "location": "Pori",
+    "latitude": "61.433210",
+    "longitude": "21.926905",
+    "imageUrl": "https://karhunvartijat.fi/allsky/images/karhu-allsky.jpg",
+    "cameraUrl": "https://karhunvartijat.fi/karhukamera/",
+    "author": "Porin Karhunvartijat ry",
+    "authorUrl": "https://karhunvartijat.fi/"
+  },
+  {
+    "location": "Lappeenranta (Mustola)",
+    "latitude": "61.06",
+    "longitude": "28.32",
+    "imageUrl": "https://www.sinijari.fi/allsky/image.jpg",
+    "cameraUrl": "https://www.sinijari.fi/allsky/index.php",
+    "author": "Mustola Observatory",
+    "authorUrl": "#"
+  },
+  {
+    "location": "Tampere",
+    "latitude": "61.5122",
+    "longitude": "23.7939",
+    "imageUrl": "https://www.ursa.fi/yhd/tampereenursa/ys-images/north-snapshot.jpg",
+    "cameraUrl": "https://www.ursa.fi/yhd/tampereenursa/",
+    "author": "Tampereen Ursa Ry",
+    "authorUrl": "https://www.tampereenursa.fi/etusivu"
+  },
+  {
+    "location": "Vaala",
+    "latitude": "64.34",
+    "longitude": "26.98",
+    "imageUrl": "https://kaukoputkimies.fi/allsky/allsky.jpg",
+    "cameraUrl": "https://www.kaukoputkimies.fi/allsky/",
+    "author": "Tero Hiekkalinna",
+    "authorUrl": "https://www.kaukoputkimies.fi/"
+  },
+  {
+    "location": "Kevo",
+    "latitude": "69.76",
+    "longitude": "27.01",
+    "imageUrl": "https://space.fmi.fi/MIRACLE/RWC/latest_KEV.jpg",
+    "cameraUrl":"https://rwc-finland.fmi.fi/index.php/revontulikameroiden-kuvat/",
+    "author":"Ilmatieteenlaitos / FMI",
+    "authorUrl": "https://fmi.fi"
+  },
+  {
+    "location": "Orimattila",
+    "latitude": "60.7335",
+    "longitude": "26.212806",
+    "imageUrl": "https://www.ursa.fi/fileadmin/ursa2010/kuvat/tahtikallio/tahtikallio-allsky.jpg",
+    "cameraUrl": "https://www.ursa.fi/tahtikallio",
+    "author": "Ursa ry, Tähtikallio",
+    "authorUrl": "https://www.ursa.fi"
+}
+  
+]

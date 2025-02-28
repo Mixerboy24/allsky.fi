@@ -1,4 +1,4 @@
-## Allsky.fi
+## Allsky.fi DEV versio
 
 **Allsky.fi** verkkosivusto on paikka josta löytää kaikki julkiset taivaskamerat. Kamerat sijaitsevat eri puolilla suomea ja kameroita ylläpitää niin tähtitieteelliset yhdistykset, yliopistot, tutkimuslaitokset kuin yksittäiset yhtiöt.   
 
@@ -6,12 +6,12 @@ Osa kameroista voi olla kesäkauden tauolla jolloin kameroiden kuvat voivat olla
 
 **Allsky.fi** on ilmainen ja mainosvapaa sivusto. Kuka tahansa voi ilmoittaa oman taivaskameransa sivustolle. 
 
-Sivuston ylläpitämisestä vastaa [Atte "Mixer" Oksanen](https://mixerboy24.fi) sekä [LocalghostFI](https://localghost.fi).
+Sivuston ylläpitämisestä vastaa [Atte "Mixer" Oksanen](https://mixerboy24.fi).
 
 
 ### Kuinka lisään uuden kameran kartalle?
 
-Jotta voin lisätä kameran verkkosivulle ja osaksi Suomen Allsky verkkoa. Täytä alla oleva JSON koodi ja toimita se issuena tai sähköpostitse contact@allsky.fi.   
+Jotta voin lisätä kameran verkkosivulle ja osaksi Suomen Allsky verkkoa. Täytä alla oleva JSON koodi ja toimita se issuena tai sähköpostitse atte.oksanen@allsky.fi.   
 Otsikoi [Issue](https://github.com/Mixerboy24/allsky.fi/issues/new) tai sähköposti: **Uusi kamera: Paikkakunta**
 
 ```json
@@ -44,7 +44,8 @@ Esim Muuramen Allsky:
 
 ---
 #### Tulevia ominaisuuksia:
-- LGFI Analytiikka integrointi
-- Allsky API (GET, POST)
-- Dark Theme
-
+- Allsky API (GET, POST) 
+- Tumma tila
+- Sijainnin asettaminen revontulia varten
+- Englannin kieli
+- Lomake jolla ilmoittaa uudet kamerat
