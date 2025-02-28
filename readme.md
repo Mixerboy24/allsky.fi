@@ -1,46 +1,48 @@
 ## Allsky.fi DEV versio
 
-**Allsky.fi** verkkosivusto on paikka josta löytää kaikki julkiset taivaskamerat. Kamerat sijaitsevat eri puolilla suomea ja kameroita ylläpitää niin tähtitieteelliset yhdistykset, yliopistot, tutkimuslaitokset kuin yksittäiset yhtiöt.   
 
-Osa kameroista voi olla kesäkauden tauolla jolloin kameroiden kuvat voivat olla "jumahtanut" huhtikuuhun. Suomessa havaintokausi kestää Syyskuusta - Huhtikuuhun. 
+Nykyinen repon versio: **Versio: 1.4.3 (DEV)**
+- SQL tietokanta korvaa cameras.jsonin
+- LGFI poistot
+- UKK
+- Sisäinen API
+- Footer paranneltu
 
-**Allsky.fi** on ilmainen ja mainosvapaa sivusto. Kuka tahansa voi ilmoittaa oman taivaskameransa sivustolle. 
+Tiedossa olevat bugit:
+- webpack snapshot antaa varoituksia
 
-Sivuston ylläpitämisestä vastaa [Atte "Mixer" Oksanen](https://mixerboy24.fi).
+Nykyinen tuotannon versio: 1.4.2 (PROD)
 
-
-### Kuinka lisään uuden kameran kartalle?
-
-Jotta voin lisätä kameran verkkosivulle ja osaksi Suomen Allsky verkkoa. Täytä alla oleva JSON koodi ja toimita se issuena tai sähköpostitse atte.oksanen@allsky.fi.   
-Otsikoi [Issue](https://github.com/Mixerboy24/allsky.fi/issues/new) tai sähköposti: **Uusi kamera: Paikkakunta**
-
-```json
-    {
-        "location": "Kameran paikkakunta",
-        "latitude": "koordinaatti",
-        "longitude": "koordinaatti",
-        "imageUrl": "Kameran kuvan jpg URL",
-        "cameraUrl": "Kameran julkinen kotisivu",
-        "author": "Kameran omistaja",
-        "authorUrl": "Omistajan verkkosivu"
-    }
+## Miten ajaa allsky.fi DEV?
+1. Lataa repo
+2. Asenna noden moduulit `npm -i`
+3. Luo `.env.local` jossa on seuraavat:
 ```
+db_osoite=localhost
+db_useri=allsky
+db_salasana=PelottavaYks1sarvinen40950!
+db_tietokanta=allskyfi
+```
+4. luo tietokanta ja suorita sinne seuraava:
+```
+CREATE TABLE cameras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    location VARCHAR(255) NOT NULL,
+    latitude DECIMAL(8,6) NOT NULL,
+    longitude DECIMAL(8,6) NOT NULL,
+    imageUrl TEXT NOT NULL,
+    cameraUrl TEXT NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    authorUrl TEXT NOT NULL
+);
 
-*Mikäli koodistasi puuttuu kenttiä, sitä ei julkaista.* 
+INSERT INTO cameras (location, latitude, longitude, imageUrl, cameraUrl, author, authorUrl) VALUES
+('Muurame', 62.137400, 25.675100, 'https://muurameallsky.fi/image-resize.jpg', 'https://muurameallsky.fi', 'Mixerboy24', 'https://mixerboy24.fi'),
+```
+5. Suorita `npm run dev` 
 
-### Ohjeet:
-
-**Sijainti:** Sijainnin on oltava kunta, jossa kamera sijaitsee, tai lähin suurempi kunta/kaupunki.    
-**Koordinaatit:** Koordinaatit voivat olla likimääräisiä, kunhan ne ovat kunnassa, jossa kamera sijaitsee. Koordinaatit ilmoitetaan XX.XXXXX muodossa.    
-Esim Muuramen Allsky: 
-```json
-      "latitude": 62.1374,
-      "longitude": 25.6751,
-```   
-**Kuvan URL:** Kuvan URL:n on tuettava HTTPS:ää ja oltava julkisesti saatavilla.   
-**Kameran URL:** Ei pakollinen, mutta suositeltava, jotta kävijät voivat vierailla kameran sivustolla.   
-**Tekijä:** Pakollinen tieto. Mielellään kameran omistaja. Esimerkiksi yhdistys tai etu- ja sukunimi + lempinimi.   
-**Tekijän URL:** Suositeltava, jotta kävijät voivat vierailla sivustollasi.   
+DEV purkki aukeaa http://localhost:3000 osoitteeseen.   
+Kartalla pitäisi nyt näkyä Muuramen allsky kamera jos kaikki on oikein.
 
 ---
 #### Tulevia ominaisuuksia:
