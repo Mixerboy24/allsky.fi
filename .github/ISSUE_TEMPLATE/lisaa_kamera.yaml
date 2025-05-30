@@ -1,0 +1,47 @@
+name: 📷 Lisää uusi kamera kartalle
+description: Lähetä tiedot kamerasi lisäämiseksi kartalle.
+labels: ["Uusi kamera"]
+assignees:
+  - Mixerboy24
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Kuinka lisätä uusi kamera kartalle**
+        
+        **Muista asettaa otsikoksi**:  
+        🔹 `Uusi Kamera: <paikkakunta>`  
+        (Korvaa `<paikkakunta>` kamerasi sijainnilla.)
+        
+        Lisää kamerasi kartalle kopioimalla ja täyttämällä alla oleva JSON-malli:
+        
+        ```json
+        {
+          "location": "Kameran kaupunki",
+          "latitude": "Kameran leveysaste",
+          "longitude": "Kameran pituusaste",
+          "imageUrl": "Kameran jpg-kuvan URL",
+          "cameraUrl": "Kameran julkinen sivu",
+          "author": "Kameran omistaja",
+          "authorUrl": "Omistajan kotisivu"
+        }
+        ```
+        
+        Kopioi täytetty JSON ja liitä se alla olevaan kenttään.
+  
+  - type: textarea
+    id: camera_details_json
+    attributes:
+      label: "📄 Kameran tiedot (JSON)"
+      description: "Liitä täytetty JSON-koodi kameran tiedoilla."
+      placeholder: "{
+        \"location\": \"Kameran kaupunki\",
+        \"latitude\": \"Kameran leveysaste\",
+        \"longitude\": \"Kameran pituusaste\",
+        \"imageUrl\": \"Kameran jpg-kuvan URL\",
+        \"cameraUrl\": \"Kameran julkinen sivu\",
+        \"author\": \"Kameran omistaja\",
+        \"authorUrl\": \"Omistajan kotisivu\"
+      }"
+    validations:
+      required: true
